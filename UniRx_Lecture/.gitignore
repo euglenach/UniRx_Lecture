@@ -3,7 +3,7 @@
 /[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
-Assets/Plugins/UniRx
+/Assets/Plugins
 *.csproj
 *.unityproj
 *.sln
