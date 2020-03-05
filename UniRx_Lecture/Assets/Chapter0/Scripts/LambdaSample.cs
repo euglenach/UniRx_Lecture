@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +13,8 @@ public class LambdaSample : MonoBehaviour{
         
         // ここにteaArrayの各要素に"茶"を追加する
 
-        // foreach(var tea in teaArray){ text.text += tea; } // テキストに表示(確認用に使ってください)
+        teaArray = teaArray.Select(t => t + "茶").ToArray();
+
+        foreach(var tea in teaArray){ text.text += tea + "\n"; } // テキストに表示(確認用に使ってください)
     }
 }
