@@ -9,6 +9,7 @@ public class TimeDisplay : MonoBehaviour{
 
     private void Start(){
         timeCounter.OnTimeCounted
-                   .Subscribe(time => timeText.text = time.ToString());
+                   .Subscribe(time => timeText.text = time.ToString())
+                   .AddTo(this);
     }
 }

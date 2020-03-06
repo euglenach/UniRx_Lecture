@@ -22,5 +22,8 @@ public class TimeCounter : MonoBehaviour{
             timerSubject.OnNext(countTime);
             yield return new WaitForSeconds(1);
         }
+
+        // おかたづけ
+        timerSubject.Dispose();
     }
 }
